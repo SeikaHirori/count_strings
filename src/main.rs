@@ -23,8 +23,7 @@ fn main() {
                 break
             },            
             _ => {
-                println!("Sentence was: {}", user_input);
-                
+
                 let word_list = logic::split_strings(user_input);
                 let word_count = logic::count_words(word_list);
                 println!("Word count: {}", word_count);
