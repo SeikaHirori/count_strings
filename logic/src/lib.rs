@@ -28,7 +28,14 @@ mod tests {
             String::from("sadge"),
         ];
 
-        assert_eq!(results, expectations);
+        assert_eq!(results, 
+            expectations,
+            "The values are not the same. Results was '{:?}', \n but expected '{:?}' instead.",
+            results,
+            expectations,
+        ); // RFER 02
     }
+
+
 
 }
