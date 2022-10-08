@@ -1,25 +1,26 @@
-pub fn add(left: usize, right: usize) -> usize {
-    left + right
+pub fn split_strings(user_string:String) -> Vec<String> {
+    /* _Objective_
+    
+        - Breakdown what is happening from RFER 03
+
+    */
+
+    let splited = user_string.split_whitespace();
+    
+    let mapped = splited.map(str::to_string);
+    let output = mapped.collect();
+    output
+
 }
+
+
 
 #[cfg(test)]
 mod tests {
     use super::*;
 
     #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
-    }
-
-    #[test]
-    fn another_test() {
-        let result = add(3, 3);
-        assert_eq!(result, 6);
-    }
-
-    #[test]
-    fn string_splits() {
+    fn test_string_splits() {
         let expectations:[String; 2] = [String::from("hello"),
             String::from("world"),
         ];
