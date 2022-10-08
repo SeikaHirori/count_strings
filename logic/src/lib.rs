@@ -25,9 +25,9 @@ mod tests {
             String::from("world"),
         ];
 
-        let results = [String::from("fail"),
-            String::from("sadge"),
-        ];
+        let user_string = String::from("hello world");
+
+        let results = split_strings(user_string);
 
         assert_eq!(results, 
             expectations,
