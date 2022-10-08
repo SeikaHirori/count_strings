@@ -14,3 +14,7 @@
 
     - Different method to split into Vec<&str>
         > https://stackoverflow.com/a/26643821
+
+# RFER 04
+- NEED TO TRIM IF USING STDIN's readline()
+    > https://stackoverflow.com/a/68135811
